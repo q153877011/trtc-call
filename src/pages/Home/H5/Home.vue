@@ -18,6 +18,7 @@
 
 <script lang="ts" setup>
 import { useLanguage, useMyRouter } from '../../../hooks';
+import { defineEmits } from 'vue';
 import Layout from '../../../components/Layout/Layout.vue';
 import Button from '../../../components/common/Button/Button.vue';
 import Icon from '../../../components/common/Icon/Icon.vue';
@@ -27,11 +28,20 @@ import GroupCallSrc from '../../../assets/Home/h5-groupcall.svg';
 
 const { t } = useLanguage();
 const { navigate } = useMyRouter();
+const emit = defineEmits(['show-dialog']);
 
 const goCall = () => {
+  if(!sessionStorage.getItem("SDKAppID") || !sessionStorage.getItem("SDKSecretKey")) {
+    emit('show-dialog')
+    return 
+  }
   navigate('/call');
 }
 const goGroupCall = () => {
+  if(!sessionStorage.getItem("SDKAppID") || !sessionStorage.getItem("SDKSecretKey")) {
+    emit('show-dialog')
+    return 
+  }
   navigate('/groupCall');
 }
 

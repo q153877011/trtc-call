@@ -29,6 +29,7 @@
 </template>
 
 <script lang="ts" setup>
+import { defineEmits } from 'vue';
 import { useLanguage, useMyRouter } from '../../../hooks';
 import Icon from '../../../components/common/Icon/Icon.vue';
 import CallSrc from '../../../assets/Home/call.png';
@@ -37,11 +38,20 @@ import RightArrowSrc from '../../../assets/Home/right-arrow.svg';
 
 const { t } = useLanguage();
 const { navigate } = useMyRouter();
+const emit = defineEmits(['show-dialog']);
 
 const goCall = () => {
+  if(!sessionStorage.getItem("SDKAppID") || !sessionStorage.getItem("SDKSecretKey")) {
+    emit('show-dialog')
+    return 
+  }
   navigate('/call');
 }
 const goGroupCall = () => {
+  if(!sessionStorage.getItem("SDKAppID") || !sessionStorage.getItem("SDKSecretKey")) {
+    emit('show-dialog')
+    return 
+  }
   navigate('/groupCall');
 }
 </script>

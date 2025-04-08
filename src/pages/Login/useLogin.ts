@@ -7,14 +7,14 @@ import * as GenerateTestUserSig from "../../debug/GenerateTestUserSig-es";
 import { useMessage, useUserInfo, useMyRouter, useAegis } from "../../hooks";
 import { checkUserID, getUrlParams } from "../../utils";
 
-
 export default function useLogin() {
   const { navigate } = useMyRouter();
   const { reportEvent } = useAegis();
   const userInfo = toRefs(useUserInfo());
   const { handleLoginMessage, handleCallError } = useMessage();
 
-  const login = async (userID: any) => {    
+  const login = async (userID?: any) => {   
+    if(!userID) userID = { value: sessionStorage.getItem('userID')}; 
     if (!userID.value) {
       handleLoginMessage('empty');
       userID.value = '';
@@ -24,6 +24,11 @@ export default function useLogin() {
       handleLoginMessage('errorFormat');
       userID.value = '';
       return;
+    }
+    console.log(sessionStorage.getItem('SDKAppID'), sessionStorage.getItem('SDKSecretKey'))
+    if(!sessionStorage.getItem('SDKAppID') || !sessionStorage.getItem('SDKSecretKey')) {
+      console.log('Please fill in SDKAppID and SecretKey first');
+      throw new Error('Please fill in SDKAppID and SecretKey first');
     }
     const { SDKAppID, userSig, SecretKey } = GenerateTestUserSig.genTestUserSig({
       userID: userID.value, 
