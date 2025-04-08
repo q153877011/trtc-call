@@ -56,7 +56,7 @@ const handleInputUserID = () => {
 
 <style lang="scss" scoped>
 .login-container {
-  margin: 40px 140px;
+  margin: 80px 140px;
   display: flex;
   flex-direction: column;
 
