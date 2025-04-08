@@ -23,15 +23,12 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { useLanguage } from '../../../hooks/index';
-import { useMyRouter, useUserInfo } from '../../../hooks';
+import { useMyRouter } from '../../../hooks';
 import useLogin from '../useLogin';
 import { trim } from '../../../utils';
 import Button from '../../../components/common/Button/Button.vue';
-import { ca } from 'element-plus/es/locale';
 
 const userID = ref('');
-const SDKAppID = ref('');
-const SDKSecretKey = ref('');
 const { t } = useLanguage();
 const { login } = useLogin();
 const { navigate } = useMyRouter();
@@ -43,7 +40,7 @@ const placeholderText = computed(() => {
 const handleLogin = async () => {
   try {
     await login(userID);}
-  catch (error) {
+  catch (error: any) {
     if(error.message === 'Please fill in SDKAppID and SecretKey first') {
       sessionStorage.setItem('userID', userID.value);
       navigate('/home');

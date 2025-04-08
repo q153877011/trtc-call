@@ -29,7 +29,7 @@
   </el-dialog>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref, toRefs, computed } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { useLanguage } from '../../hooks/index';
 import { useMyRouter, useUserInfo } from '../../hooks';
 import useLogin from '../Login/useLogin';
@@ -39,7 +39,7 @@ import HomeH5 from './H5/Home.vue';
 import { trim } from '../../utils';
 
 const { navigate } = useMyRouter();
-const userInfo = ref(useUserInfo());
+const userInfo:any = ref(useUserInfo());
 const SDKAppID = ref('');
 const SDKSecretKey = ref('');
 const dialogVisible = ref(false);

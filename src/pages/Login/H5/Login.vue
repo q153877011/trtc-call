@@ -23,7 +23,7 @@
 import { computed, ref } from 'vue'
 import { useLanguage } from '../../../hooks/index';
 import useLogin from '../useLogin';
-import { useMyRouter, useUserInfo } from '../../../hooks';
+import { useMyRouter } from '../../../hooks';
 import { trim } from '../../../utils';
 import Layout from '../../../components/Layout/Layout.vue';
 import Button from '../../../components/common/Button/Button.vue';
@@ -41,7 +41,7 @@ const placeholderText = computed(() => {
 const handleLogin = async () => {
   try {
     await login(userID);}
-  catch (error) {
+  catch (error: any) {
     if(error.message === 'Please fill in SDKAppID and SecretKey first') {
       sessionStorage.setItem('userID', userID.value);
       navigate('/home');
