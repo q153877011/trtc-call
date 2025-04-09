@@ -1,13 +1,17 @@
-# Call UIKit for Vue QuickStart
+# TRTC Call UIKit
 
-<b> English </b> | <a href="https://github.com/tencentyun/TUICallKit/blob/main/Web/basic-vue3/README-zh_CN.md"> 简体中文 </a>
+This template is designed to help users quickly deploy and experience high-quality online calls. By reading this document, you will learn how to quickly run the TUICallKit sample project and perform secondary development. It only takes 5 minutes to successfully run the Demo and start your own live broadcast experience.
 
-<img src="https://img.shields.io/badge/Platform-Vue3-orange.svg"><img src="https://img.shields.io/badge/Language-Typescript-orange.svg">
+## Quick Deployment
+Using the EdgeOne page, you can achieve zero-code audio and video call system setup through rapid template deployment.
 
-<img src="https://qcloudimg.tencent-cloud.cn/raw/ec034fc6e4cf42cae579d32f5ab434a1.png" align="left" width=120 height=120>TUICallKit is a UIKit component for **audio and video calls** developed by Tencent Cloud. By integrating this component, you can easily add video calling functionality to your app with just a few lines of code. TUICallKit supports features like offline calling and is available on multiple platforms including Android, iOS, Web, and Flutter.
+<a href="https://edgeone.ai/pages/new?from=github&amp;template=https://github.com/q153877011/trtc-call&amp;from=github" rel="nofollow"><img src="https://camo.githubusercontent.com/6a94a67f6a020d5810ef905549fc5255bf99ccd09f17881b6855b332b579a364/68747470733a2f2f63646e7374617469632e74656e63656e7463732e636f6d2f656467656f6e652f70616765732f6465706c6f792e737667" alt="Deploy with EdgeOne Pages" data-canonical-src="https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg" style="max-width: 100%;"></a>
 
-<a href="https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%A7%86%E7%AB%8B%E6%96%B9trtc/id1400663224"><img src="https://qcloudimg.tencent-cloud.cn/raw/afe9b8cc4c715346cf3d9feea8a65e33.svg" height=40></a> <a href="https://dldir1.qq.com/hudongzhibo/liteav/TRTCDemo.apk"><img src="https://qcloudimg.tencent-cloud.cn/raw/006d5ed3359640424955baa08dab7c7f.svg" height=40></a> <a href="https://rtcube.cloud.tencent.com/prerelease/internation/homepage/index.html#/detail?scene=callkit"><img src="https://qcloudimg.tencent-cloud.cn/raw/d326e70750f8bbad7245e229c5bd6d2b.svg" height=40></a>
+You can click the "View Demo" button on the left to experience the online demonstration.
 
+Please note that the deployment template is based on secondary development of the original repository code, mainly for experiencing quick deployment features and online Demo. If you need to develop more extensive features, we recommend using the original repository code for in-depth development. Original development repository address: [https://github.com/Tencent-RTC/TUICallKit/tree/main/Web/basic-vue3](https://github.com/Tencent-RTC/TUICallKit/tree/main/Web/basic-vue3)
+
+The following tutorial will provide detailed guidance on how to quickly run and experience the Demo.
 
 ## Before getting started
 
