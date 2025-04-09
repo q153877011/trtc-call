@@ -14,7 +14,7 @@ const en = {
   "Please enter the userID to create or log in": "Please enter the userID to create or log in",
   "Please enter the SDKAppId obtained from the console": "Please enter the SDKAppId obtained from the console",
   "Please enter the SDKSecretKey obtained from the console": "Please enter the SDKSecretKey obtained from the console",
-  "userID Limit": "32 Char Limit,A-Z a-z 0-9 _ -",
+  "userID Limit": "Use only A-Z, a-z, 0-9, _ and -. 32 Char Limit",
   "Create / Log in": "Create / Log in",
   "Login Successful": "Login Successful",
   "Please input the correct userID": "Please input the correct userID",

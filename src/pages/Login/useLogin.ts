@@ -25,6 +25,7 @@ export default function useLogin() {
       userID.value = '';
       return;
     }
+    userInfo.userID.value = userID.value;
     console.log(sessionStorage.getItem('SDKAppID'), sessionStorage.getItem('SDKSecretKey'))
     if(!sessionStorage.getItem('SDKAppID') || !sessionStorage.getItem('SDKSecretKey')) {
       console.log('Please fill in SDKAppID and SecretKey first');

@@ -39,7 +39,8 @@ const placeholderText = computed(() => {
 
 const handleLogin = async () => {
   try {
-    await login(userID);}
+    await login(userID);
+  }
   catch (error: any) {
     if(error.message === 'Please fill in SDKAppID and SecretKey first') {
       sessionStorage.setItem('userID', userID.value);
