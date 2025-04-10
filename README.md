@@ -1,6 +1,8 @@
 # TRTC Call UIKit
 
-This template is designed to help users quickly deploy and experience high-quality online calls. By reading this document, you will learn how to quickly run the TUICallKit sample project and perform secondary development. It only takes 5 minutes to successfully run the Demo and start your own live broadcast experience.
+This template is designed to help users quickly deploy and experience high-quality online calls. In practical application scenarios, whether it's a friendly chat between friends who are thousands of miles apart or a private communication between business partners, by using this template, you can conveniently initiate 1v1 audio and video chats with others and enjoy a clear and smooth communication experience just like having a face-to-face conversation.
+
+In addition, by reading this document, you will learn how to quickly run the TUICallKit sample project and conduct secondary development. It only takes 5 minutes to successfully run the Demo and rapidly build your own innovative applications such as stranger chat applications.
 
 ## Quick Deployment
 Using the EdgeOne page, you can achieve zero-code audio and video call system setup through rapid template deployment.
@@ -75,6 +77,6 @@ If you would like to try the demo specifically fit to your usage, you can do so 
 
 ## Reference
 
-- If you want to learn more about the product features, you can click on the following [link](https://trtc.io/products).
+- If you want to learn more about the product features, you can click on the following [link](https://trtc.io/products/call).
 - If you encounter difficulties, you can refer to [FAQs](https://trtc.io/document/53565), here are the most frequently encountered problems of developers, covering various platforms, I hope you can Help you solve problems quickly.
 - For complete API documentation, see [Audio Video Call SDK API Example](https://trtc.io/document/51014): including TUICallKit (with UIKit), TUICallEngine (without UIKit), and call events Callbacks, etc.
